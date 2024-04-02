@@ -23,6 +23,7 @@ const useFetch = (endpoint, query) => {
 
         try {
             const response = await axios.request(options);
+            console.log(`Loaded ${response.data.data.length} for search call using query '${options.params.query}'`)
             setData(response.data.data);
         } catch (error) {
             setError(error);
