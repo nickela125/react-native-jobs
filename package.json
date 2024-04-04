@@ -11,7 +11,7 @@
   "dependencies": {
     "@expo/cli": "^0.17.8",
     "@expo/config": "^8.1.1",
-    "@expo/metro-config": "~0.17.1",
+    "@expo/metro-config": "^0.10.0",
     "axios": "^1.6.8",
     "dotenv": "^16.4.5",
     "expo": "^50.0.1",
