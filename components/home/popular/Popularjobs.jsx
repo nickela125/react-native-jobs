@@ -8,7 +8,7 @@ import PopularJobCard from '../../common/cards/popular/PopularJobCard'
 import useFetch from '../../../hook/useFetch'
 
 const Popularjobs = () => {
-  // useState();
+  const [selectedJob, setSelectedJob] = useState()
   const router = useRouter();
 
   const {data, isLoading, error} = useFetch('search', {
@@ -39,6 +39,7 @@ const Popularjobs = () => {
               renderItem={({ item }) => (
                 (<PopularJobCard
                   item={item}
+                  selectedJob={selectedJob}
                   handleCardPress={handleCardPress}
                 />)
               )}
